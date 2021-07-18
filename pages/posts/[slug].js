@@ -1,6 +1,5 @@
 import Head from "next/head"
 import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md';
 
 export default class Home extends Component {
   render() {
@@ -12,7 +11,6 @@ export default class Home extends Component {
         </Head>
         <article>
           <h1>{title}</h1>
-          <HomeContent />
           <ul>
             {cats.map((cat, k) => (
               <li key={k}>
